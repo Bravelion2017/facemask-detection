@@ -20,6 +20,10 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from keras.preprocessing.image import ImageDataGenerator
 from tensorflow import keras
+import urllib.request
+
+urllib.request.urlretrieve(
+        'https://facemaskoseme.s3.amazonaws.com/model_xception_facemask.h5', 'model_xception_facemask.h5')
 
 
 img_size = (299, 299)
