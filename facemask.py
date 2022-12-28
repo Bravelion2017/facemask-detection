@@ -71,7 +71,7 @@ model= keras.models.load_model('model_xception_facemask.h5')
 # ===========================================
 
 my_app = dash.Dash(__name__,external_stylesheets=[dbc.themes.SOLAR])
-
+server = my_app.server
 
 my_app.layout = html.Div([
     html.H1('Face Mask Detection', style=style), html.Br(),
@@ -129,6 +129,7 @@ def update(image):
 # Please Note: host='127.0.0.1' works for me else host='0.0.0.0' Thank you.
 if __name__ == '__main__':
     my_app.run_server(
-        port = random.randint(8000,9999),
-        host="127.0.0.1"
+        debug = True,
+        host= '0.0.0.0',
+        port= 8080
     )
