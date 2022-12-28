@@ -7,7 +7,7 @@ plotly
 dash
 statsmodels
 scikit-learn
-base64
+pybase64
 tensorflow
 opencv-python
 tqdm
