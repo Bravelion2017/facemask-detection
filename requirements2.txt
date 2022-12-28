@@ -1,0 +1,17 @@
+numpy
+matplotlib
+pandas
+seaborn
+scipy
+plotly
+dash
+statsmodels
+scikit-learn
+base64
+tensorflow
+opencv-python
+tqdm
+keras
+scikit-image
+requests
+requires.io
