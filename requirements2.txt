@@ -16,3 +16,4 @@ scikit-image
 requests
 requires.io
 urllib3
+gunicorn
